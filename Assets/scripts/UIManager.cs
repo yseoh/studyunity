@@ -7,6 +7,7 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         GameManager.Instance.OnMapLoaded += OnMapLoaded;
+        OnMapLoaded(GameManager.Instance.GetCurrentMapName());
     }
 
     void OnDestroy()

@@ -113,4 +113,9 @@ public class GameManager : MonoBehaviour
         _curIdx = (_curIdx + 1) % _mapDatas.Count;
         LoadMap(_curIdx);
     }
+
+    public string GetCurrentMapName()
+    {
+        return _mapDatas[_curIdx].mapName;
+    }
 }
